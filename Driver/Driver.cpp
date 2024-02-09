@@ -4,6 +4,9 @@
 extern "C" VOID
 TestUnload(_In_ PDRIVER_OBJECT DriverObject);
 
+// Declare the DriverEntry function using the DRIVER_INITIALIZE function typedef
+extern "C" DRIVER_INITIALIZE DriverEntry;
+
 // Entry point for the driver
 extern "C" NTSTATUS
 DriverEntry(_In_ PDRIVER_OBJECT DriverObject,
