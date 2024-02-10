@@ -1,8 +1,7 @@
 #include <ntddk.h>
 
 // Forward declaration of the Unload routine
-extern "C" VOID
-TestUnload(_In_ PDRIVER_OBJECT DriverObject);
+extern "C" DRIVER_UNLOAD TestUnload;
 
 // Declare the DriverEntry function using the DRIVER_INITIALIZE function typedef
 extern "C" DRIVER_INITIALIZE DriverEntry;
