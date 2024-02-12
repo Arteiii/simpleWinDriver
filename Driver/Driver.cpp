@@ -1,4 +1,4 @@
-#include <ntddk.h>
+#include "pch.h"
 
 // Forward declaration of the Unload routine
 extern "C" DRIVER_UNLOAD TestUnload;
